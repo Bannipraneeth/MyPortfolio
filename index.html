@@ -1,0 +1,582 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Portfolio of Praneeth Reddy Chittim Reddy - Computer Science student specializing in AI/ML, Full-Stack Development, and LLM Integration.">
+    <meta name="keywords" content="Praneeth Reddy, Portfolio, AI, Machine Learning, Full Stack Developer, Python, React, Node.js">
+    <meta name="author" content="Praneeth Reddy Chittim Reddy">
+    <title>Praneeth Reddy | AI/ML Developer Portfolio</title>
+    
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=Outfit:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    
+    <!-- Remix Icons -->
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@4.0.0/fonts/remixicon.css" rel="stylesheet">
+    
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar" id="navbar">
+        <div class="nav-container">
+            <a href="#home" class="nav-logo">
+                <span class="logo-text">&lt;PR /&gt;</span>
+            </a>
+            
+            <div class="nav-menu" id="nav-menu">
+                <ul class="nav-list">
+                    <li class="nav-item"><a href="#home" class="nav-link active">Home</a></li>
+                    <li class="nav-item"><a href="#about" class="nav-link">About</a></li>
+                    <li class="nav-item"><a href="#skills" class="nav-link">Skills</a></li>
+                    <li class="nav-item"><a href="#projects" class="nav-link">Projects</a></li>
+                    <li class="nav-item"><a href="#certifications" class="nav-link">Certifications</a></li>
+                    <li class="nav-item"><a href="#contact" class="nav-link">Contact</a></li>
+                </ul>
+            </div>
+            
+            <div class="nav-actions">
+                <button class="theme-toggle" id="theme-toggle" aria-label="Toggle dark mode">
+                    <i class="ri-moon-line"></i>
+                </button>
+                <button class="nav-toggle" id="nav-toggle" aria-label="Toggle navigation">
+                    <i class="ri-menu-3-line"></i>
+                </button>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero" id="home">
+        <div class="hero-container">
+            <div class="hero-content">
+                <span class="hero-greeting">Hello, I'm</span>
+                <h1 class="hero-title">Praneeth Reddy</h1>
+                <h2 class="hero-subtitle">
+                    <span class="typing-text" id="typing-text"></span>
+                    <span class="cursor">|</span>
+                </h2>
+                <p class="hero-description">
+                    A forward-thinking Computer Science student specializing in <strong>AI & Machine Learning</strong>. 
+                    Proficient in leveraging LLMs for efficient project development and a firm believer that 
+                    <em>prompt engineering is the future of productivity</em>.
+                </p>
+                <div class="hero-buttons">
+                    <a href="#projects" class="btn btn-primary">
+                        <i class="ri-folder-line"></i>
+                        View Projects
+                    </a>
+                    <a href="#contact" class="btn btn-secondary">
+                        <i class="ri-mail-line"></i>
+                        Get In Touch
+                    </a>
+                </div>
+                <div class="hero-socials">
+                    <a href="https://github.com/Bannipraneeth" target="_blank" rel="noopener noreferrer" class="social-link" aria-label="GitHub">
+                        <i class="ri-github-fill"></i>
+                    </a>
+                    <a href="https://linkedin.com/in/CH-PRANEETH-REDDY" target="_blank" rel="noopener noreferrer" class="social-link" aria-label="LinkedIn">
+                        <i class="ri-linkedin-fill"></i>
+                    </a>
+                    <a href="mailto:praneethbanni@gmail.com" class="social-link" aria-label="Email">
+                        <i class="ri-mail-fill"></i>
+                    </a>
+                    <a href="tel:+917386724745" class="social-link" aria-label="Phone">
+                        <i class="ri-phone-fill"></i>
+                    </a>
+                </div>
+            </div>
+            <div class="hero-image">
+                <div class="image-wrapper">
+                    <div class="image-glow"></div>
+                    <img src="assets/profile.jpg" alt="Praneeth Reddy Chittim Reddy" class="profile-img">
+                    <div class="image-decoration"></div>
+                </div>
+            </div>
+        </div>
+        <div class="hero-scroll">
+            <a href="#about" class="scroll-indicator">
+                <span>Scroll Down</span>
+                <i class="ri-arrow-down-line"></i>
+            </a>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section class="about" id="about">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-tag">Get To Know</span>
+                <h2 class="section-title">About Me</h2>
+            </div>
+            
+            <div class="about-content">
+                <div class="about-cards">
+                    <div class="about-card">
+                        <i class="ri-graduation-cap-line"></i>
+                        <h3>Education</h3>
+                        <p>B.Tech in CSE (AI-ML)</p>
+                        <span>ANITS • 2023-2026</span>
+                    </div>
+                    <div class="about-card">
+                        <i class="ri-code-s-slash-line"></i>
+                        <h3>Experience</h3>
+                        <p>6+ Projects</p>
+                        <span>Full-Stack & AI/ML</span>
+                    </div>
+                    <div class="about-card">
+                        <i class="ri-award-line"></i>
+                        <h3>Certifications</h3>
+                        <p>3 Certifications</p>
+                        <span>AI & LangChain</span>
+                    </div>
+                </div>
+                
+                <div class="about-text">
+                    <p>
+                        I'm a Computer Science student at <strong>Anil Neerukonda Institute of Technology and Sciences</strong>, 
+                        specializing in Artificial Intelligence and Machine Learning. With a strong conviction in the 
+                        transformative power of AI and Large Language Models, I focus on building intelligent applications 
+                        that solve real-world problems.
+                    </p>
+                    <p>
+                        Previously, I completed my Diploma in Engineering from <strong>Sir CR Reddy Polytechnic College</strong> 
+                        (2020-2023), which gave me a solid foundation in programming and software development.
+                    </p>
+                    <p>
+                        My expertise spans from full-stack web development using <strong>React, Node.js, and MongoDB</strong> 
+                        to AI-powered applications leveraging <strong>LangChain, Transformers, and LLM APIs</strong>. 
+                        I'm eager to apply this unique blend of technical skills and AI proficiency to solve complex 
+                        problems in a dynamic tech environment.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Skills Section -->
+    <section class="skills" id="skills">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-tag">What I Know</span>
+                <h2 class="section-title">Technical Skills</h2>
+            </div>
+            
+            <div class="skills-grid">
+                <div class="skill-category">
+                    <h3 class="category-title">
+                        <i class="ri-code-line"></i>
+                        Languages
+                    </h3>
+                    <div class="skill-tags">
+                        <span class="skill-tag">Python</span>
+                        <span class="skill-tag">SQL</span>
+                        <span class="skill-tag">JavaScript</span>
+                        <span class="skill-tag">HTML</span>
+                        <span class="skill-tag">CSS</span>
+                    </div>
+                </div>
+                
+                <div class="skill-category">
+                    <h3 class="category-title">
+                        <i class="ri-robot-line"></i>
+                        AI/ML
+                    </h3>
+                    <div class="skill-tags">
+                        <span class="skill-tag">Prompt Engineering</span>
+                        <span class="skill-tag">LLM Integration</span>
+                        <span class="skill-tag">LangChain</span>
+                        <span class="skill-tag">Transformers</span>
+                        <span class="skill-tag">API Usage</span>
+                    </div>
+                </div>
+                
+                <div class="skill-category">
+                    <h3 class="category-title">
+                        <i class="ri-database-2-line"></i>
+                        Databases
+                    </h3>
+                    <div class="skill-tags">
+                        <span class="skill-tag">MongoDB</span>
+                        <span class="skill-tag">MySQL</span>
+                        <span class="skill-tag">PostgreSQL</span>
+                    </div>
+                </div>
+                
+                <div class="skill-category">
+                    <h3 class="category-title">
+                        <i class="ri-tools-line"></i>
+                        Tools & Technologies
+                    </h3>
+                    <div class="skill-tags">
+                        <span class="skill-tag">Git</span>
+                        <span class="skill-tag">GitHub</span>
+                        <span class="skill-tag">Flask</span>
+                        <span class="skill-tag">FastAPI</span>
+                        <span class="skill-tag">React</span>
+                        <span class="skill-tag">Node.js</span>
+                        <span class="skill-tag">Express</span>
+                        <span class="skill-tag">Next.js</span>
+                        <span class="skill-tag">n8n</span>
+                        <span class="skill-tag">VS Code</span>
+                        <span class="skill-tag">Docker</span>
+                        <span class="skill-tag">Streamlit</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section class="projects" id="projects">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-tag">My Work</span>
+                <h2 class="section-title">Featured Projects</h2>
+            </div>
+            
+            <div class="projects-grid">
+                <!-- Project 1: BLNR E-commerce -->
+                <article class="project-card">
+                    <div class="project-image">
+                        <div class="project-overlay">
+                            <div class="project-links">
+                                <a href="https://github.com/Bannipraneeth/BLNR-website" target="_blank" rel="noopener noreferrer" class="project-link" aria-label="View GitHub Repository">
+                                    <i class="ri-github-line"></i>
+                                </a>
+                                <a href="https://blnr-website.vercel.app/" target="_blank" rel="noopener noreferrer" class="project-link" aria-label="View Live Demo">
+                                    <i class="ri-external-link-line"></i>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="project-icon">
+                            <i class="ri-shopping-bag-3-line"></i>
+                        </div>
+                    </div>
+                    <div class="project-content">
+                        <h3 class="project-title">BLNR E-commerce Platform</h3>
+                        <p class="project-description">
+                            Full-stack e-commerce web application featuring user authentication, product management, 
+                            order processing, and Razorpay payment integration. Includes admin dashboards and 
+                            robust middleware for security.
+                        </p>
+                        <div class="project-tech">
+                            <span>Next.js</span>
+                            <span>React</span>
+                            <span>Node.js</span>
+                            <span>MongoDB</span>
+                            <span>TailwindCSS</span>
+                            <span>Razorpay</span>
+                        </div>
+                    </div>
+                </article>
+
+                <!-- Project 2: Blood Bank System -->
+                <article class="project-card">
+                    <div class="project-image">
+                        <div class="project-overlay">
+                            <div class="project-links">
+                                <a href="https://github.com/Bannipraneeth/Blood-Bank-System" target="_blank" rel="noopener noreferrer" class="project-link" aria-label="View GitHub Repository">
+                                    <i class="ri-github-line"></i>
+                                </a>
+                                <a href="#live-link" target="_blank" rel="noopener noreferrer" class="project-link" aria-label="View Live Demo">
+                                    <i class="ri-external-link-line"></i>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="project-icon">
+                            <i class="ri-heart-pulse-line"></i>
+                        </div>
+                    </div>
+                    <div class="project-content">
+                        <h3 class="project-title">Blood Bank Management System</h3>
+                        <p class="project-description">
+                            Healthcare platform connecting blood donors and recipients. Features real-time 
+                            notifications using Socket.io, secure password hashing, and anonymous donor 
+                            information handling with encryption.
+                        </p>
+                        <div class="project-tech">
+                            <span>React</span>
+                            <span>Vite</span>
+                            <span>Node.js</span>
+                            <span>MongoDB</span>
+                            <span>Socket.io</span>
+                            <span>JWT</span>
+                        </div>
+                    </div>
+                </article>
+
+                <!-- Project 3: Employee Attendance System -->
+                <article class="project-card">
+                    <div class="project-image">
+                        <div class="project-overlay">
+                            <div class="project-links">
+                                <a href="https://github.com/Bannipraneeth/Attendance-Manager" target="_blank" rel="noopener noreferrer" class="project-link" aria-label="View GitHub Repository">
+                                    <i class="ri-github-line"></i>
+                                </a>
+                                <a href="#live-link" target="_blank" rel="noopener noreferrer" class="project-link" aria-label="View Live Demo">
+                                    <i class="ri-external-link-line"></i>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="project-icon">
+                            <i class="ri-user-settings-line"></i>
+                        </div>
+                    </div>
+                    <div class="project-content">
+                        <h3 class="project-title">Employee Attendance System</h3>
+                        <p class="project-description">
+                            Employee tracking system with check-in/check-out functionality, attendance history, 
+                            and summary reports. Includes separate employee and manager dashboards with 
+                            role-based access control.
+                        </p>
+                        <div class="project-tech">
+                            <span>React</span>
+                            <span>Node.js</span>
+                            <span>Express</span>
+                            <span>MongoDB</span>
+                            <span>JWT</span>
+                            <span>Redux</span>
+                        </div>
+                    </div>
+                </article>
+
+                <!-- Project 4: GenAI PDF Summarizer -->
+                <article class="project-card">
+                    <div class="project-image">
+                        <div class="project-overlay">
+                            <div class="project-links">
+                                <a href="https://github.com/Bannipraneeth/GenAI_PDF_Summarizer" target="_blank" rel="noopener noreferrer" class="project-link" aria-label="View GitHub Repository">
+                                    <i class="ri-github-line"></i>
+                                </a>
+                                <a href="#live-link" target="_blank" rel="noopener noreferrer" class="project-link" aria-label="View Live Demo">
+                                    <i class="ri-external-link-line"></i>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="project-icon">
+                            <i class="ri-file-text-line"></i>
+                        </div>
+                    </div>
+                    <div class="project-content">
+                        <h3 class="project-title">GenAI PDF Summarizer</h3>
+                        <p class="project-description">
+                            AI-powered Python application leveraging LLM APIs and LangChain to generate concise 
+                            summaries of long articles and documents. Engineered prompts ensure contextually 
+                            accurate and coherent outputs.
+                        </p>
+                        <div class="project-tech">
+                            <span>Python</span>
+                            <span>Streamlit</span>
+                            <span>LangChain</span>
+                            <span>Groq</span>
+                            <span>PyPDF</span>
+                        </div>
+                    </div>
+                </article>
+
+                <!-- Project 5: Insurance Policy Summarizer -->
+                <article class="project-card">
+                    <div class="project-image">
+                        <div class="project-overlay">
+                            <div class="project-links">
+                                <a href="#github-link" target="_blank" rel="noopener noreferrer" class="project-link" aria-label="View GitHub Repository">
+                                    <i class="ri-github-line"></i>
+                                </a>
+                                <a href="#live-link" target="_blank" rel="noopener noreferrer" class="project-link" aria-label="View Live Demo">
+                                    <i class="ri-external-link-line"></i>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="project-icon">
+                            <i class="ri-shield-check-line"></i>
+                        </div>
+                    </div>
+                    <div class="project-content">
+                        <h3 class="project-title">Insurance Policy Summarizer</h3>
+                        <p class="project-description">
+                            AI-based solution using NLP to extract and summarize insurance policy and Terms & 
+                            Conditions documents. Built with FastAPI backend, PostgreSQL database, and 
+                            HuggingFace Transformers for ML processing.
+                        </p>
+                        <div class="project-tech">
+                            <span>Python</span>
+                            <span>FastAPI</span>
+                            <span>PostgreSQL</span>
+                            <span>Transformers</span>
+                            <span>Docker</span>
+                            <span>Celery</span>
+                        </div>
+                    </div>
+                </article>
+
+                <!-- Project 6: Social Media Platform -->
+                <article class="project-card">
+                    <div class="project-image">
+                        <div class="project-overlay">
+                            <div class="project-links">
+                                <a href="https://github.com/Bannipraneeth/Social-Media-Platform" target="_blank" rel="noopener noreferrer" class="project-link" aria-label="View GitHub Repository">
+                                    <i class="ri-github-line"></i>
+                                </a>
+                                <a href="#live-link" target="_blank" rel="noopener noreferrer" class="project-link" aria-label="View Live Demo">
+                                    <i class="ri-external-link-line"></i>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="project-icon">
+                            <i class="ri-chat-3-line"></i>
+                        </div>
+                    </div>
+                    <div class="project-content">
+                        <h3 class="project-title">Social Media Platform V1.0</h3>
+                        <p class="project-description">
+                            Secure web-based social media platform with user posts, interactions, and 
+                            authentication. Features a modern UI with React frontend and robust Node.js 
+                            backend with MongoDB database.
+                        </p>
+                        <div class="project-tech">
+                            <span>React</span>
+                            <span>Node.js</span>
+                            <span>Express</span>
+                            <span>MongoDB</span>
+                            <span>JWT</span>
+                        </div>
+                    </div>
+                </article>
+            </div>
+        </div>
+    </section>
+
+    <!-- Certifications Section -->
+    <section class="certifications" id="certifications">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-tag">My Achievements</span>
+                <h2 class="section-title">Certifications</h2>
+            </div>
+            
+            <div class="certifications-grid">
+                <div class="certification-card">
+                    <div class="cert-icon">
+                        <i class="ri-medal-line"></i>
+                    </div>
+                    <div class="cert-content">
+                        <h3>Gen AI Summarization with LangChain</h3>
+                        <p>Coursera</p>
+                    </div>
+                </div>
+                
+                <div class="certification-card">
+                    <div class="cert-icon">
+                        <i class="ri-medal-line"></i>
+                    </div>
+                    <div class="cert-content">
+                        <h3>The Complete Prompt Engineering for AI</h3>
+                        <p>Udemy</p>
+                    </div>
+                </div>
+                
+                <div class="certification-card">
+                    <div class="cert-icon">
+                        <i class="ri-medal-line"></i>
+                    </div>
+                    <div class="cert-content">
+                        <h3>AI-First Software Engineering</h3>
+                        <p>Infosys Springboard</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section class="contact" id="contact">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-tag">Get In Touch</span>
+                <h2 class="section-title">Contact Me</h2>
+            </div>
+            
+            <div class="contact-content">
+                <p class="contact-intro">
+                    I'm always interested in hearing about new opportunities, collaborations, 
+                    or just having a chat about technology and AI. Feel free to reach out!
+                </p>
+                
+                <div class="contact-grid">
+                    <a href="mailto:praneethbanni@gmail.com" class="contact-card">
+                        <div class="contact-icon">
+                            <i class="ri-mail-line"></i>
+                        </div>
+                        <h3>Email</h3>
+                        <p>praneethbanni@gmail.com</p>
+                    </a>
+                    
+                    <a href="tel:+917386724745" class="contact-card">
+                        <div class="contact-icon">
+                            <i class="ri-phone-line"></i>
+                        </div>
+                        <h3>Phone</h3>
+                        <p>+91 7386724745</p>
+                    </a>
+                    
+                    <a href="https://linkedin.com/in/CH-PRANEETH-REDDY" target="_blank" rel="noopener noreferrer" class="contact-card">
+                        <div class="contact-icon">
+                            <i class="ri-linkedin-line"></i>
+                        </div>
+                        <h3>LinkedIn</h3>
+                        <p>CH-PRANEETH-REDDY</p>
+                    </a>
+                    
+                    <a href="https://github.com/Bannipraneeth" target="_blank" rel="noopener noreferrer" class="contact-card">
+                        <div class="contact-icon">
+                            <i class="ri-github-line"></i>
+                        </div>
+                        <h3>GitHub</h3>
+                        <p>Bannipraneeth</p>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <a href="#home" class="footer-logo">
+                    <span>&lt;PR /&gt;</span>
+                </a>
+                <p class="footer-text">
+                    Designed & Built by <strong>Praneeth Reddy</strong> with ❤️
+                </p>
+                <div class="footer-socials">
+                    <a href="https://github.com/Bannipraneeth" target="_blank" rel="noopener noreferrer" aria-label="GitHub">
+                        <i class="ri-github-fill"></i>
+                    </a>
+                    <a href="https://linkedin.com/in/CH-PRANEETH-REDDY" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn">
+                        <i class="ri-linkedin-fill"></i>
+                    </a>
+                    <a href="mailto:praneethbanni@gmail.com" aria-label="Email">
+                        <i class="ri-mail-fill"></i>
+                    </a>
+                </div>
+                <p class="footer-copyright">
+                    © 2024 Praneeth Reddy. All rights reserved.
+                </p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Back to Top Button -->
+    <button class="back-to-top" id="back-to-top" aria-label="Back to top">
+        <i class="ri-arrow-up-line"></i>
+    </button>
+
+    <!-- Custom JS -->
+    <script src="script.js"></script>
+</body>
+</html>
